@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="41" id="FFv-BN-RFE" customClass="ThirdTabelViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FFv-BN-RFE" id="JJs-KQ-nmi">
+                <frame key="frameInset" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-hI-OrO">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39.5" id="9Yt-rh-e3b"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="退出登录"/>
+                        <connections>
+                            <action selector="LogOut:" destination="FFv-BN-RFE" eventType="touchUpInside" id="Kqb-0h-WXe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7d8-hI-OrO" firstAttribute="top" secondItem="JJs-KQ-nmi" secondAttribute="top" id="5jM-bg-HE4"/>
+                    <constraint firstAttribute="trailing" secondItem="7d8-hI-OrO" secondAttribute="trailing" id="7T5-pX-bo8"/>
+                    <constraint firstAttribute="bottom" secondItem="7d8-hI-OrO" secondAttribute="bottom" id="G57-wk-Bjq"/>
+                    <constraint firstItem="7d8-hI-OrO" firstAttribute="leading" secondItem="JJs-KQ-nmi" secondAttribute="leading" id="ZTL-Ft-67N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="199" y="274.5"/>
+        </tableViewCell>
+    </objects>
+</document>
